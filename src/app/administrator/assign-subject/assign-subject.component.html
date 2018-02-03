@@ -1,0 +1,21 @@
+<form>
+  <section class="form-block">
+      <div class="form-group">
+          <label for="aForm_3">Select Subject</label>
+          <div class="select">
+              <select id="aForm_3" name="subjects" [(ngModel)]="subjectS">
+                  <option *ngFor="let sub of subject " [value]="sub">{{sub}}</option>
+              </select>
+          </div>
+      </div>
+      <div class="form-group">
+        <label for="aForm_3">Select Student</label>
+        <div class="select">
+            <select id="aForm_3" name="student" [(ngModel)]="studentCode" >
+              <option *ngFor="let std of students" [value]="std">{{std}}</option>
+            </select>
+        </div>
+    </div>
+      <button type="submit" class="btn btn-primary" (click)=" assign()">Assign</button>
+  </section>
+</form>

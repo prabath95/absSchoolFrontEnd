@@ -1,0 +1,14 @@
+<form>
+  <section class="form-block">
+    <label>Add New Subjects</label>
+    <div class="form-group">
+      <label for="aForm_1">Subject Code</label>
+      <input name="sCode" type="text" id="aForm_1" placeholder="Enter value here" size="45" [(ngModel)]="sCode">
+    </div>
+    <div class="form-group">
+      <label for="aForm_2">Subject Name</label>
+      <input type="text" name="sname" id="aForm_2" placeholder="Enter another value here" size="45" [(ngModel)]="sName">
+    </div>
+    <button type="submit" class="btn btn-primary" (click)="addSubject()">Add Subject</button>
+  </section>
+</form>

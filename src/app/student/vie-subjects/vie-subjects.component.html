@@ -1,0 +1,17 @@
+<h3 style="display:inline">Allocated Subjects</h3>
+  <button type="button" class="btn btn-icon" (click)="viewAssigned()">
+      <clr-icon shape="refresh"></clr-icon>
+  </button>
+  <h3 style="display:inline">View All Subjects</h3>
+  <button type="button" class="btn btn-icon" (click)="viewAll()">
+      <clr-icon shape="refresh"></clr-icon>
+  </button>
+  <clr-datagrid>
+    <clr-dg-column [clrDgField]="'name'">Name</clr-dg-column>
+
+    <clr-dg-row *clrDgItems="let std of subject">
+      <clr-dg-cell class="centertd">{{std}}</clr-dg-cell>
+    </clr-dg-row>
+
+    <clr-dg-footer>{{subject.length}} Pending Approvals</clr-dg-footer>
+  </clr-datagrid>

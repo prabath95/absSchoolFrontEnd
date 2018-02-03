@@ -1,0 +1,20 @@
+<div class="main-container">
+  <app-header></app-header>
+<div class="content-container">
+
+  
+  <div class="content-area">
+    <router-outlet></router-outlet>
+  </div>
+  <clr-vertical-nav>
+    <a clrVerticalNavLink routerLink="./viewSubject" routerLinkActive="active">
+      <clr-icon clrVerticalNavIcon shape="home"></clr-icon>
+      view Allocated Subjects
+    </a>
+    <a clrVerticalNavLink routerLink="./viewSubject" routerLinkActive="active">
+      <clr-icon clrVerticalNavIcon shape="users"></clr-icon>
+      View All Subjects
+    </a>
+  </clr-vertical-nav>
+</div>
+</div>

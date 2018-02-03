@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row">
+    <div class="center">
+      <h1>ABS School Login</h1>
+          <div class="account-wall">
+              <img class="profile-img" src="https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=120"
+                  alt="">
+              <div class="form-signin">
+              <input type="text" [(ngModel)]="username" class="form-control" placeholder="Email" required autofocus size="30" >
+              <input type="password" [(ngModel)]="password" class="form-control" placeholder="Password" required size="30" >
+              <button class="btn btn-lg btn-primary btn-block" type="submit" (click)="login()">
+                  Sign in</button>
+              <a (click)="resetAccount()" class="pull-right need-help">Reset Account</a><span class="clearfix"></span>
+            </div>
+      </div>
+    </div>
+  </div>
+</div>
